@@ -13,14 +13,14 @@ var del = require('del');
 var paths = {
 	images: './src/img/**/*',
 	scripts: './src/js/**/*.js',
-	styles: ['./src/less/**/*.less', './src/css/**/*.css']
+	styles: ['./src/less/style.less', './src/css/**/*.css']
 }
 
 gulp.task('styles', function () {
 	return gulp.src(paths.styles)
 			   .pipe(sourcemaps.init())
-			   .pipe(autoprefixer('last 2 version'))
 			   .pipe(less())
+			   .pipe(autoprefixer('last 2 version'))
 			   .pipe(cssNano())
 			   .pipe(concat('style.css'))
 			   .pipe(sourcemaps.write())

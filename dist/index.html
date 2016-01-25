@@ -1,23 +1,45 @@
 <!doctype html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Nick Coad - Online Résumé and Portfolio</title>
+
         <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
         <script src="assets/js/site.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <link href='assets/css/style.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="sliding-panel resume-container">
-            <a href="#" class="sliding-panel-toggle resume-toggle">Panel 1</a>
+            <div class="sliding-panel-bg resume-bg"></div>
+            <div class="sliding-panel-header">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Résumé</h1>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="sliding-panel-toggle resume-toggle"><span class="fa fa-4x fa-fw fa-arrow-circle-left"></span>Résumé</a>
             <div class="sliding-panel-content">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-xs-12">
                         <h1>About me</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id libero volutpat, dignissim odio quis, sagittis erat. Nam condimentum velit erat, eu accumsan ligula rhoncus a. Praesent blandit sem sapien, nec efficitur quam rutrum in. Nulla a nunc ante. Quisque vitae ante lorem. Aliquam tempor ex sit amet dignissim pellentesque. Donec nunc mi, suscipit vel diam vel, elementum commodo felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Quisque quis volutpat magna. Donec euismod pulvinar vehicula. Ut non magna tempus, interdum dui eget, vehicula velit. Cras ac facilisis eros.</p> 
-
+                        <p>
+                            My name is Nick Coad and I'm a web developer from Launceston, Tasmania. I've been practicing web development in my
+                            spare time for 15 years and professionally for 6 years - first as a contracted freelance web developer and currently
+                            as a full-time web developer for VETtrak Pty Ltd.  I have a wide range of web-based skills and knowledge all of which
+                            are summarised on this page.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
                         <h1>Work experience</h1>
+                        
                         <h2 class="resume-company">
                             VETtrak Pty Ltd
                         </h2>
@@ -68,7 +90,6 @@
                             </div>
                         </div>
                         
-                        <h1>Work experience</h1>
                         <h2 class="resume-company">
                             OzSoft Solutions Pty Ltd
                         </h2>
@@ -146,13 +167,6 @@
                                 </p>
                             </div>
                         </div>
-                        
-                        <h1>Education</h1>
-                        <ul>
-                            <li>(ICA40205) Certificate IV in Information Technology</li>
-                            <li>(20486) Developing ASP.NET MVC 4 Web Applications</li>
-                        </ul>
-                        
                     </div>
                     <div class="col-md-5">
                         <h1>Skills</h1>
@@ -161,6 +175,8 @@
                             <li>Illustrator <div class="stars"><div class="stars-4"></div></div></li>
                             <li>Photoshop <div class="stars"><div class="stars-5"></div></div></li>
                             <li>Visual Studio 2013 - 2015 <div class="stars"><div class="stars-4"></div></div></li>
+                            <li>GitHub/SVN <div class="stars"><div class="stars-4"></div></div></li>
+                            <li>NuGet/NPM <div class="stars"><div class="stars-4"></div></div></li>
                         </ul>
                         <h2>Frontend development</h2>
                         <ul>
@@ -176,17 +192,41 @@
                             <li>ASP.NET (C#) <div class="stars"><div class="stars-4"></div></div></li>
                             <li>PHP <div class="stars"><div class="stars-4"></div></div></li>
                         </ul>
+                        
+                        <h1>Education</h1>
+                        <ul>
+                            <li>(ICA40205) Certificate IV in Information Technology</li>
+                            <li>(20486) Developing ASP.NET MVC 4 Web Applications</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="sliding-panel portfolio-container">
-            <a href="#" class="sliding-panel-toggle portfolio-toggle">Panel 2</a>
+            <div class="sliding-panel-bg portfolio-bg"></div>
+            <div class="sliding-panel-header">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Portfolio</h1>
+                    </div>
+                </div>
+            </div>
+            <a class="sliding-panel-toggle portfolio-toggle"><span class="fa fa-4x fa-fw fa-arrow-circle-right"></span> Portfolio</a>
             <div class="sliding-panel-content">
                 <div class="row">
                     <div class="col-xs-12">
                         <h1>VETtrak Trainer Portal</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id libero volutpat, dignissim odio quis, sagittis erat. Nam condimentum velit erat, eu accumsan ligula rhoncus a. Praesent blandit sem sapien, nec efficitur quam rutrum in. Nulla a nunc ante. Quisque vitae ante lorem. Aliquam tempor ex sit amet dignissim pellentesque. Donec nunc mi, suscipit vel diam vel, elementum commodo felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Quisque quis volutpat magna. Donec euismod pulvinar vehicula. Ut non magna tempus, interdum dui eget, vehicula velit. Cras ac facilisis eros.</p> 
+                        <p>
+                            The VETtrak Trainer Portal is designed to integrate with VETtrak Pty Ltd's primary software solution VETtrak<sup>&reg;</sup>. The Trainer Portal
+                            allows our customers to sign in and manage their students including the recording of results, attendance and more. The software also boasts a
+                            sophisticated Quality Assurance system allowing an administrator to approve all changes that come in through the portal so that our clients can
+                            maintain tight control over the quality of their data.
+                        </p>
+                        <p>
+                            This project included the development of a C# API to communicate with the VETtrak database in a way that respected the business logic already
+                            present in the software, so that information entered through the API is stored and managed in the same way as data entered through the main
+                            software.
+                        </p>
                     </div>
                 </div>
                 <div class="row">
@@ -209,22 +249,30 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h1>VETtrak Student Portal</h1>
-                        <p>Morbi placerat enim in odio gravida hendrerit. Donec blandit at urna id ultrices. Donec ante nibh, congue ac magna elementum, placerat porttitor nunc. Duis efficitur eros sed enim facilisis, a dignissim lectus placerat. Pellentesque suscipit ipsum quis lobortis hendrerit. Fusce rhoncus, orci ut dapibus tincidunt, enim ligula pretium dui, non iaculis est metus eget augue. Donec nisi augue, commodo in tempus ut, finibus quis nisi. Maecenas bibendum varius pretium. Curabitur eget porta eros. Nulla facilisi. Donec ut cursus sapien, at scelerisque leo. Proin felis diam, lacinia non erat vitae, porta pretium diam.</p> 
+                        <p>
+                            The VETtrak Student Portal is designed to integrate with VETtrak Pty Ltd's primary software solution VETtrak<sup>&reg;</sup>. The Student Portal
+                            allows our customers to provide their students with a username and password that they can use to sign and view their course progress and upload
+                            or download files against units of competency. This allows a student to submit file-based evidence for trainers to review through the Trainer
+                            Portal.
+                        </p>
+                        <p>
+                            This project also makes use of the C# API developed for the Trainer Portal.
+                        </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="vettrak_student_portal">
+                        <a href="//placehold.it/1000x600" class="thumbnail portfolio-thumbnail">
                             <img src="//placehold.it/500x300">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="vettrak_student_portal">
+                        <a href="//placehold.it/1000x600" class="thumbnail portfolio-thumbnail">
                             <img src="//placehold.it/500x300">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="vettrak_student_portal">
+                        <a href="//placehold.it/1000x600" class="thumbnail portfolio-thumbnail">
                             <img src="//placehold.it/500x300">
                         </a>
                     </div>
@@ -232,22 +280,25 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h1>Bad @ Video Games</h1>
-                        <p>Quisque pulvinar mauris in rhoncus hendrerit. Mauris mattis nisl a lectus pellentesque, a facilisis justo aliquam. Ut scelerisque tempus leo ut mattis. Etiam eu tellus erat. Pellentesque ac consectetur lectus. Sed eu placerat metus. Cras eu ante nec elit fermentum suscipit. Curabitur quis sodales nibh. Donec tincidunt varius neque non eleifend. Mauris in nunc metus.</p>
+                        <p>
+                            This was a website designed and built for a friend. The website was based on the WordPress CMS and the design was implemented as a
+                            WordPress theme.
+                        </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="bavg">
+                        <a href="//placehold.it/1000x600" class="thumbnail portfolio-thumbnail">
                             <img src="//placehold.it/500x300">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="bavg">
+                        <a href="//placehold.it/1000x600" class="thumbnail portfolio-thumbnail">
                             <img src="//placehold.it/500x300">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="bavg">
+                        <a href="//placehold.it/1000x600" class="thumbnail portfolio-thumbnail">
                             <img src="//placehold.it/500x300">
                         </a>
                     </div>
@@ -255,23 +306,22 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h1>Athena Athletica</h1>
-                        <p>Maecenas libero dui, pulvinar vitae feugiat porta, eleifend et ante. Etiam consequat tristique neque, vitae auctor eros semper non. Mauris vel lacus nec neque suscipit ullamcorper sed ut massa. Curabitur efficitur lacus vel nulla gravida, eget sagittis mauris finibus. Praesent efficitur eros in elementum tincidunt. Etiam ullamcorper metus at nulla viverra tempus. Nam tempus mi sem, ut rutrum mi feugiat porta. Sed risus metus, hendrerit a gravida sit amet, varius ut quam.</p>
+                        <p>
+                            This project is a design-only project for a friend's business venture that didn't eventuate. I was asked to provide a design that looked
+                            modern and communicated a sense of health and well-being. Using stock photography of people undergoing exercise both in the gym and in nature
+                            gave the site a fresh and healthy look.
+                        </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="athena_athletica">
-                            <img src="//placehold.it/500x300">
+                        <a href="assets/img/athena-athletica-1.png" class="thumbnail portfolio-thumbnail">
+                            <img src="assets/img/athena-athletica-1.png">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="athena_athletica">
-                            <img src="//placehold.it/500x300">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="//placehold.it/1000x600" class="thumbnail" data-lightbox="athena_athletica">
-                            <img src="//placehold.it/500x300">
+                        <a href="assets/img/athena-athletica-2.png" class="thumbnail portfolio-thumbnail">
+                            <img src="assets/img/athena-athletica-2.png">
                         </a>
                     </div>
                 </div>

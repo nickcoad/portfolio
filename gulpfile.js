@@ -9,6 +9,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var notify = require('gulp-notify');
 var del = require('del');
+var watch = require('gulp-watch');
 
 var paths = {
 	images: './src/img/**/*',
@@ -46,6 +47,19 @@ gulp.task('images', function() {
 
 gulp.task('clean', function() {
   	return del(['dist/assets/css', 'dist/assets/js', 'dist/assets/img']);
+});
+
+gulp.task('watch', function() {
+
+  // Watch .less files
+  gulp.watch(paths.styles, ['styles']);
+
+  // Watch .js files
+  gulp.watch(paths.scripts, ['scripts']);
+
+  // Watch image files
+  gulp.watch(paths.images, ['images']);
+
 });
 
 gulp.task('clearCache', function(done) {

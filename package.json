@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "description": "1.0.0",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Coad",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "~3.9.0",
+    "gulp-autoprefixer": "~3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-imagemin": "~2.4.0",
+    "gulp-less": "~3.0.5",
+    "gulp-notify": "^2.2.0",
+    "gulp-sourcemaps": "~1.6.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-watch": "~4.3.5"
+  }
+}

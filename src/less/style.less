@@ -84,8 +84,13 @@ body {
     top: 50vh;
     transform: translateX(-100px) translateY(-25px);
     transition: 0.3s 0.9s all ease;
-    width: 200px;
+    padding: 2rem;
     z-index: 0;
+    
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 .sliding-panel-closed .sliding-panel-toggle {
@@ -257,4 +262,12 @@ hr {
     &-2 {
         width: 50px;
     }
+}
+
+@media (max-width: @screen-md-max) {
+    
+    .sliding-panel-toggle {
+        font-size: 0.8em;
+    }
+
 }
